@@ -1,0 +1,30 @@
+﻿<form method="post">
+
+    <p> Id: </p>
+    <input type="number" name="ID" min="1" required />
+    <br />
+
+    <p> Title: </p>
+    <input type="text" pattern="[a-zA-Z_]" name="Title" required />
+    <br />
+    
+    <p> Genre: </p>
+    <input name="Genre" pattern="[a-zA-Z]" required />
+    <br />
+
+    <p> Year: </p>
+    <input type="number" name="Year" max="2022" min="1880" required />
+    <br />
+
+    <p> Actors: </p>
+    <input name="Actors" pattern="[a-zA-Z_]" required />
+    <br />
+
+    <p> Directors: </p>
+    <input name="Directors" required />
+    <br />
+
+    <input type="submit" />
+
+
+</form>
