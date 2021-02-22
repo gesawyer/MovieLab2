@@ -26,13 +26,18 @@ namespace MovieMCV.Controllers
         [HttpPost]
         public IActionResult Index(Movie movie)
         {
-            return RedirectToAction("Result", movie);
+            {
+                return RedirectToAction("Result", movie);
+            }
         }
 
         public IActionResult Result(Movie movie)
         {
             return View(movie);
         }
+
+    
+
 
         public IActionResult Privacy()
         {

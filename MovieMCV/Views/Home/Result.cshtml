@@ -1,8 +1,19 @@
 ﻿@model Movie
 
-@{ 
+@{
     string title = Model.Title;
 
 }
 
+@if (Model != null && !String.IsNullOrEmpty(Model.Title) && (Model != null && !String.IsNullOrEmpty(Model.Genre)))
+{
 <h2>@title has been registered!</h2>
+}
+else
+{
+<h2>Title and genre must be filled out!</h2>
+    
+}
+
+
+

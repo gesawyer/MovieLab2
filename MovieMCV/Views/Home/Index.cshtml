@@ -5,11 +5,12 @@
     <br />
 
     <p> Title: </p>
-    <input type="text" pattern="[a-zA-Z_]" name="Title" required />
+
+    <input name="Title" type="text"  required />
     <br />
-    
+
     <p> Genre: </p>
-    <input name="Genre" pattern="[a-zA-Z]" required />
+    <input name="Genre" type="text" required />
     <br />
 
     <p> Year: </p>
@@ -17,11 +18,14 @@
     <br />
 
     <p> Actors: </p>
-    <input name="Actors" pattern="[a-zA-Z_]" required />
+    <input type="text" name="Actors[]" required />
+    <input type="text" name="Actors[]" />
+    <input type="text" name="Actors[]"/>
     <br />
 
     <p> Directors: </p>
-    <input name="Directors" required />
+    <input name="Directors[]" type="text" required />
+    <input name="Directors[]" type="text"/>
     <br />
 
     <input type="submit" />
